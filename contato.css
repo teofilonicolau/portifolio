@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0; 
+
+
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  background: #11998e;
+  background-image: linear-gradient(60deg, #5a10b5 0%, #002349 100%); 
+  background: -webkit-linear-gradient(
+    to right,
+    #5a10b5 0%,
+    #002349 100%);
+    /**/
+    display: flex;
+    flex-direction: column; 
+  
+}
+
+#nav-container {
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.09);
+  height: 100px;
+}
+
+.logo  {
+
+  width: 40%;
+  height: auto;
+  margin-bottom: 2%
+  
+}
+
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding: 0 10px;
+  height: 100px;
+}
+
+.nav-link > a {
+  text-decoration: none;
+  margin-left: 50px;
+  font-weight: 600;
+  color: #eaffda;
+}
+
+.nav-link a:hover {
+  color: gold !important;
+}
+
+.form-box {
+  display: flex;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.form-box .form-value h2 {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.form-box .form-value h2:hover {
+  color: gold;
+}
+
+.form-box fieldset legend {
+  cursor: pointer;
+
+  color:  #eaffda;;
+}
+
+.social-media-container a {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.social-media-container a:hover {
+  transform: translateY(-3px);
+  color: gold;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/**/
+.form-box fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form-box legend {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.inputbox {
+  margin-bottom: 15px;
+}
+
+.inputbox label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  background-color: #f7f7f7;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-bottom: 2px solid gold;
+  outline: none;
+}
+
+/* Botão de enviar */
+button[type="submit"] {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: gold;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #fff;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+.forget {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 15px;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  background: gold;
+  color: #fff;
+}
+.register {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+.form-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.09);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  transition: transform 0.5s;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: gold;
+}
+
+
+.social-media-container a {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-right: 20px;
+  color: #eaffda;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.social-media-container a:hover {
+  transform: translateY(-3px);
+  color: yellow;
+}
+
+
+@media screen and (max-width: 1050px) {
+  .navbar {
+    width: 94%;
+  }
+  .content-container {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .portfolio-text-container,
+  .portfolio-image-container {
+    width: 100%;
+  }
+  .content-container {
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  .menu-btn-container {
+    display: block;
+  }
+  .nav-link {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    background: #2f4858;
+    z-index: 2;
+  }
+  .nav-link > a {
+    padding: 30px;
+    margin: 0px;
+    width: 100%;
+  }
+  .nav-link > a:hover {
+    background: #38ef7d;
+  }
+  #menu-btn {
+    cursor: pointer;
+    font-size: 40px;
+    color: #eaffda !important;
+  }
+}
